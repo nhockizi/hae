@@ -28,7 +28,7 @@ class PerPage {
                 $output = $output . '<span class="dot">...</span>';
             }
 
-            for($i=($_GET["page"]-2); $i<=($_GET["page"]+2); $i++)	{
+            for($i=($_GET["page"]-1); $i<=($_GET["page"]+1); $i++)	{
                 if($i<1) continue;
                 if($i>$pages) break;
                 if($_GET["page"] == $i)
