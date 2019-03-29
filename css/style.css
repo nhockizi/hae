@@ -9,6 +9,7 @@ html, body {
     /*font-family: myFont;*/
     font-weight: 600;
     color: #4B4B4B;
+    overflow: no-display;
 }
 
 a {
@@ -30,12 +31,19 @@ a:hover {
 .login {
     bottom: 0;
 }
-
-.main-content {
+.main-backgroud-color{
     background: #383842;
+}
+.main-content {
+    color: #FFFFFF;
+    min-height: 100%;
+}
+.main-content .list-item {
     color: #FFFFFF;
 }
-
+.main-content .item .message {
+    min-height: 180px;
+}
 .main-content .item .name {
     font-family: myFont;
 }
@@ -47,12 +55,12 @@ a:hover {
 
 .main-content .edit {
     right: 40px;
-    bottom: 10px;
+    bottom: 30px;
 }
 
 .main-content .trash {
     right: 0;
-    bottom: 10px;
+    bottom: 30px;
 }
 
 .main-content .edit-content {
@@ -130,4 +138,138 @@ a:hover {
 
 .error {
     border: 1px solid red;
+}
+
+
+ .link {
+     padding: 5px 14px;
+     background: transparent;
+     cursor:pointer;
+     color:#ffffff;
+ }
+.disabled {
+    cursor:not-allowed;
+}
+.current {
+    background: #C9193D;
+    border-radius: 25px;
+}
+.first{border-left:#bccfd8 1px solid;}
+.question {font-weight:bold;}
+.answer{padding-top: 10px;}
+#pagination{
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 10px;
+}
+.dot {
+    padding: 10px 15px;
+    background: transparent;
+}
+#overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#overlay div {
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-32px;
+    margin-left:-32px;
+}
+.page-content {
+    padding: 20px;
+    margin: 0 auto;
+}
+.pagination-setting {
+    padding:10px;
+    margin:5px 0px 10px;
+    border:#bccfd8  1px solid;
+    color:#607d8b;
+}
+.clear{
+    clear: both;
+}
+.bottom{
+    bottom: 0px;
+    width: 100%;
+}
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
+/*
+ * Styles copied from the Grid example to make grid rows & columns visible.
+ */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+h4 {
+    margin-top: 25px;
+}
+.row .row {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+[class*="col-"] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*
+ * Callout styles copied from Bootstrap's main docs.
+ */
+/* Common styles for all types */
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 3px solid #eee;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    background-color: #fff;
+    border-radius: 3px;
+}
+/* Variations */
+.bs-callout-danger {
+    background-color: #fdf7f7;
+    border-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    background-color: #fcf8f2;
+    border-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    background-color: #f4f8fa;
+    border-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
 }

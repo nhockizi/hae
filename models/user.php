@@ -27,7 +27,7 @@ class User
         $data = $sql->fetch(PDO::FETCH_ASSOC);
         if(!$data){
             $result = [
-                'code' => 404,
+                'code' => 500,
                 'message' => 'Username or Password is wrong',
             ];
         }else{

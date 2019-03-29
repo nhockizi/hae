@@ -1,7 +1,7 @@
 <?php
 $controllers = array(
     'pages' => ['index', 'error'],
-    'message' => ['index', 'create'],
+    'message' => ['index', 'create','view', 'save', 'delete'],
     'auth' => ['index', 'login','logout'],
 );
 
